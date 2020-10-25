@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= title %></title>
+  <%- include('partials/head.html') -%>
+</head>
+<body>
+  <%- include('partials/navigation.html') -%>
+  <div class="container-fluid mb-5">
+    <div class="row d-block">
+      <img style="max-width: 100%; height: auto;/*max-height: 900px*/" src="./img/app1.png">
+    </div>
+    <div class="row">
+      <div class="col">
+        <ul class="nav nav-tabs justify-content-left m-5" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active tr" key="app-a-1" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-size: 18px;">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tr"  key="app-a-2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="font-size: 18px;">What is a HealthSite?</a>
+          </li>
+        </ul>
+        <div class="tab-content mt-5 mb-5" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <%- include('partials/app_overview.html') -%>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <%- include('partials/app_healthsite.html') -%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<%- include('partials/footer.html') -%>
+</html>
+
+<script>
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    AOS.refresh();
+});
+</script>

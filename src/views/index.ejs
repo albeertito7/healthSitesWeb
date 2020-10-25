@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title><%= title %></title>
+	<%- include('partials/head.html') -%>
+
+</head>
+<body>
+	<%- include('partials/navigation.html') -%>
+		<header class="row">
+			<div class="col-lg-12 text-center">
+				<!--<img src="/img/HealthSitesLogo.png" alt="" style="max-width: 300px;">-->
+				<%- include('partials/carrousel.html') -%>
+			</div>
+		</header>
+
+	<!-- SECTION ONE -->
+	<div class="container-fluid" style="padding-bottom: 0px;" id="about">
+		<div class="row mt-5 mb-5 text-center">
+			<div class="col-sm-5 ml-5 p-5 lift-up" style="z-index: 1000;">
+				<img data-aos="zoom-in-right" data-aos-duration="500" style="max-width: 500px;" src="/img/presentacioapp.png"/>
+			</div>
+			<div class="col text-left text-white" data-aos="fade-up-left" data-aos-duration="500" style="height: 50%;margin-top: 100px;">
+				<div class="row" style="padding: 100px; background-color: #3ace27; transform: rotate(-6deg);">
+					<span style="transform: rotate(6deg);">
+						<h2 class="tr" key="h2-index-1" style="font-weight: bold;">Do you like healthy living?<br/>Are you vegan?</h2>
+						<h4 class="tr" key="h4-index-1">Want to find out which healthy restaurants or stores are closest to you when you travel?</h4>
+						<p class="tr" key="p-index-1" style="color: #a2f19d;">With healthSites you will be able to easily locate the closest establishments to your location in a second. Choose among all the ones that appear on the map the one that best suits your needs by consulting their properties and valuations.</p>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-5" style="height: 300px; background-size: cover; background-image: url('img/img6.jpg')">
+			<div class="col"></div>
+			<div class="col-sm-5 mr-5 pt-5 pb-5 text-center">
+				<div class="tr" key="div-index-1" style="font-size: 30px; font-weight: bold; color: white; margin-bottom: 20px;">Comming soon</div>
+				<div style="margin-right: 20px; display: inline-block;"><img data-aos="zoom-in-left" src="img/img8.png" width="265"/></div>
+				<div style="display: inline-block;"><img data-aos="zoom-in-left" src="img/img9.png" width="240" /></div>
+			</div>
+			
+		</div>
+		<div class="row mb-5 text-center">
+			<div class="col text-left text-white" data-aos="fade-up-left" data-aos-duration="500" style="margin-top: 100px;">
+				<div class="row" style="padding: 100px;background-color: #3ace27; transform: rotate(6deg);">
+					<span style="transform: rotate(-6deg);">
+						<h2 class="tr" key="h2-index-2" style="font-weight: bold;">Do you have a vegetarian restaurant or an ecologic or gluten/lactose free store, and are you interested in making yourself known?</h2>
+						<p class="tr" key="p-index-2" style="color: #a2f19d;">You can add your own HealthSite, explain to your potential customers what you offer, let them find you and value your service or product</p>
+					</span>
+				</div>
+			</div>
+			<div class="col-sm-5 m-5 text-center lift-up" style="z-index: 1000;">
+				<img data-aos="zoom-in-right" data-aos-duration="500" src="/img/img5.png"/>
+			</div>
+		</div>
+
+		<div class="row mb-5 text-center">
+			<div class="col-sm-5 ml-5 p-5 lift-up" style="z-index: 1000;">
+				<img data-aos="zoom-in-right" data-aos-duration="500" style="max-width: 500px;" src="/img/presentacioperfilhealthsite.png"/>
+			</div>
+			<div class="col text-left text-white" data-aos="fade-up-left" data-aos-duration="500" style="height: 50%;margin-top: 100px; display: flex; flex-direction: column; align-items: center;">
+				<div class="row" style="padding: 100px; background-color: #3ace27; transform: rotate(-6deg);">
+					<span style="transform: rotate(6deg);">
+						<h2 key="h2-index-1" style="font-weight: bold;">Promociona't, descobreix nous plaers,<br/>i explica'ns la teva experiència!!</h2>
+						<h4>Segueix les HealthSites més atractives, estiguis al corrent del seu contingut</h4>
+						<p style="color: #a2f19d;">Podràs veure les propietats, accedir a les dades del contacte, i veure els comentaris dels usuaris sobre les HealthSites que més t'interessin.</p>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5 p-5 text-center" style="background-image: url('img/img7.jpg'); margin-bottom: 50px;background-size: contain;">
+			<div class="col card home  m-4 lift-up" data-aos="fade-right" data-aos-duration="500">
+				<i class="fa fa-map-marker-alt fa-4x" aria-hidden="true"></i>
+				  <div class="card-body">
+				    <p class="card-text tr" key="p-index-3">Geolocation of the user and the nearest healthsites on the map</p>
+				  </div>
+			</div>
+			<div class="col card home m-4 lift-up" data-aos="fade-right" data-aos-duration="400">
+				<i class="fa fa-map fa-4x" aria-hidden="true"></i>
+				  <div class="card-body">
+				    <p class="card-text tr" key="p-index-4">Integration with googlemaps to know the route to the establishment</p>
+				  </div>
+			</div>
+			<div class="col card home m-4 lift-up" data-aos="fade-right" data-aos-duration="300">
+				<i class="fas fa-store fa-4x" aria-hidden="true"></i>
+				  <div class="card-body">
+				    <p class="card-text tr" key="p-index-5">Access to the HealthSite chosen to know its properties and categories</p>
+				  </div>
+			</div>
+			<div class="col card home m-4 lift-up" data-aos="fade-right" data-aos-duration="200">
+				<i class="fas fa-users fa-4x" aria-hidden="true"></i>
+				  <div class="card-body">
+				    <p class="card-text tr" key="p-index-6">User reviews and ratings based on experience</p>
+				  </div>
+			</div>
+		</div>
+
+		<div class="container mb-5 pt-5 pb-5" data-aos="zoom-in" data-aos-duration="500">
+			<div class="mb-4 tr" key="div-index-2" style="font-size: 45px; text-align: center; font-weight: bold; color: black;">Learn more</div>
+			<div class="card mb-3" style="width: 100%;">
+				<div class="card-header font-weight-bold tr" key="div-index-3" style="font-size: 25px;">Who we are?</div>
+				<div class="card-body" style="display: flex; flex-direction: row;">
+					<div class="tr" key="div-index-4" style="width: 90%; padding-right: 20px;">
+						Know more about our team and how this project began
+					</div>
+					<div style="width: 10%; text-align: center;">
+						<button type="button" class="btn btn-outline-success lift-up tr" key="nav-about" onclick="goToAboutUs()">About us</button>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3" style="width: 100%;">
+				<div class="card-header font-weight-bold tr" key="div-index-5" style="font-size: 25px;">Wanna know how the app works?</div>
+				<div class="card-body" style="display: flex; flex-direction: row;">
+					<div class="tr" key="div-index-6" style="width: 90%; padding-right: 20px;">
+						Take a look at our App page to know more about the app's funcionalities
+					</div>
+					<div style="width: 10%; text-align: center;">
+						<button type="button" class="btn btn-outline-success lift-up tr" key="nav-documentation" onclick="goToApp()">App</button>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3" style="width: 100%;">
+				<div class="card-header font-weight-bold tr" key="div-index-7" style="font-size: 25px;">Do you have any question?</div>
+				<div class="card-body" style="display: flex; flex-direction: row;">
+					<div class="tr" key="div-index-8" style="width: 90%; padding-right: 20px;">
+						Contact us for any single question you have, we will be happy to answer you as your feedback helps us improve the user experience and many other things
+					</div>
+					<div style="width: 10%; text-align: center;">
+						<button type="button" class="btn btn-success lift-up tr" key="nav-contact" onclick="goToContact()">Contact</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+<%- include('partials/footer.html') -%>
+</html>

@@ -7,7 +7,17 @@
     "start": "node src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["heath", "healthy","vegan","vegetarian","ecologic","gluten", "latose", "map", "app"],
+  "keywords": [
+    "heath",
+    "healthy",
+    "vegan",
+    "vegetarian",
+    "ecologic",
+    "gluten",
+    "latose",
+    "map",
+    "app"
+  ],
   "author": "albert pérez datsira",
   "license": "ISC",
   "dependencies": {

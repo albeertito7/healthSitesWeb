@@ -1,5 +1,5 @@
 # HealthSites NodeJs Website
-Developed and designed as a part of the business plan for the HealthSites Android App
+Developed and designed as a part of the business/marketing plan for the [HealthSites Android App](https://github.com/albeertito7/HealthSites).
 
 # Deployed
 The website is deployed using heroku, thus u can find the Procfile.<br/>
